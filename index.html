@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What Vegetable Are You?</title>
-    <link rel="icon" href="smaller_images/tomato.png" type="image/png">
+    <title>Tokyo Alley Celebration Quiz</title>
+    <link rel="icon" href="images/tomato.png" type="image/png">
     <style>
         @font-face {
-            font-family: 'PixelFont';
-            src: url('Pixelify_Sans/pixel_font.ttf') format('truetype');
+            font-family: 'Montserrat';
+            src: url('Montserrat/Montserrat-Regular.ttf') format('truetype');
         }
 
         body, html {
@@ -17,7 +17,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'PixelFont', sans-serif;
+            font-family: 'Montserrat', 'regular';
             background: #faf5e2;
         }
 
@@ -95,17 +95,29 @@
             font-size: 20px;
             margin-bottom: 1rem; /* Space above the choices container */
         /* padding-bottom: 5rem; */
+            overflow-y: auto;
+            max-height: 300px;
+            height: auto;
+        }
+
+        .results {
+            font-size: 20px;
+            margin-bottom: 1rem; /* Space above the choices container */
+        /* padding-bottom: 5rem; */
+            overflow-y: auto;
+            height: auto;
         }
 
         .image-container {
-            max-width: 70%; /* Set max width of image container */
-            margin: 0 auto; /* Center the image horizontally */
+            max-width: 40%; /* Set max width of image container */
+            margin: -26% auto; /* Center the image horizontally */
+            display: contents;
         }
 
         .image-container img {
             width: 100%; /* Make the image fill its container */
             height: auto; /* Maintain aspect ratio */
-            display: block; /* Remove any extra space */
+            /*display: block; /* Remove any extra space */
             max-width: 100%; /* Ensure image does not exceed its container */
         }
 
@@ -113,21 +125,46 @@
             max-width: 100%;
             height: auto;
         }
+        .scroll-box {
+            max-height: 190px;
+            height: auto;
+            overflow-y: auto; /* Adds a vertical scrollbar only when content overflows */
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="title">What vegetable are you?</div> 
-        <img id="homescreen" style="padding-bottom: 15px" src="smaller_images/homepage.png" alt="Story Image"/>
-        <a href="#" class="start-button" onclick="startGame()">Start</a>
+        <img id="homescreen" style="padding-bottom: 15px" src="images/TITLE.png" alt="Story Image"/>
         
+        <div class="scroll-box">
+            <p><b>November 19th marks the anniversary of Tokyo Alley, and in 2026, we're celebrating 10 years!</b></p>
+            
+            <p>A whole decade of bringing people together, celebrating the things we love, and creating unforgettable memories. And
+            what better way to celebrate than with a birthday party?</p>
+            
+            <p>Help Touko plan the perfect birthday celebration for Sensei, and by the end you'll discover which Australian convention
+            mascot best matches your personality!</p>        
+            
+            <p><b>About Tokyo Alley</b></p>
+            <p>Tokyo Alley Perth is Western Australia's longest-running anime and pop-culture convention. As a volunteer-run,</br>
+            non-profit organisation, we're passionate about cultivating creativity within our community and beyond.</p>
+            
+            <p>Thank you for being a part of our journey!</p>
+        </div>
+        <a href="#" class="start-button" onclick="startGame()">Start</a>
+
         <div class="game-container" id="game-container">
-            <div class ="story-text" id="story-text"></div>
             <div class="image-container">
-                <img id="story-image" src="smaller_images/placeholder.png" alt="Story Image"/>
+                <img id="story-image" src="images/Tokyo Alley Sensei BASECOLOUR.png" alt="Story Image" />
             </div>
+            <div class="story-text" id="story-text"></div>
+            <div class="results" id="results"></div>
             <div class="choices" id="choices"></div>
         </div>
+    </div> 
+    
 
     </div>
     
