@@ -854,7 +854,7 @@ function revealMostSelectedVegetable() {
 
         // Share button functionality
         shareButton.onclick = () => {
-            const shareMessage = `Check out my Tokyo Alley Celebration Prsent! You can see yours at https://tokyoalleyperth.github.io/TA-celebration-quiz/`;
+            const shareMessage = `Check out my Tokyo Alley Celebration Present! You can see yours at https://tokyoalleyperth.github.io/TA-celebration-quiz/`;
             navigator.clipboard.writeText(shareMessage).then(() => {
                 alert('Link copied to clipboard!');
             }).catch(err => {
