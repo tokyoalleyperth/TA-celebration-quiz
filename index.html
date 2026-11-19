@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +9,44 @@
     <style>
         @font-face {
             font-family: 'Montserrat';
-            src: url('Montserrat/Montserrat-Regular.ttf') format('truetype');
+            src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
         }
 
-        body, html {
+         @font-face {
+            font-family: 'Montserrat';
+            src: url('fonts/Montserrat-ExtraBold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: bold;
+            font-display: swap;
+        }
+
+        body,
+        html {
             height: 100%;
             margin: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'Montserrat', 'regular';
-            background: #faf5e2;
+            font-family: 'Montserrat';
+            background: #e7edee;
         }
 
         .container {
-            width: 100vw; /* full viewport width */
-            height: calc(100vw * (16 / 9)); /* maintain 9:16 aspect ratio */
-            max-height: 150vh; /* full viewport height */
+            width: 100vw;
+            min-height: 100dvh;
+            /* full viewport width */
+            height: calc(123vw * (16 / 9));
+            /* maintain 9:16 aspect ratio */
+            max-height: 150vh;
+            /* full viewport height */
             max-width: calc(100vh * (9 / 16));
             padding: 20px;
             border-radius: 10px;
-            background: #a6e6b5;
+            background: #e7edee;
             /* background: #e5f2d2; */
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
             text-align: center;
             box-sizing: border-box;
             display: flex;
@@ -46,12 +62,13 @@
 
         .start-button {
             font-size: 21px;
+            font-weight: bold;
             padding: 1vh 2vw;
             /* border: 2px solid #fcf0c0; */
-            background-color: #f8eab6;
+            background-color: #eb0c8c;
+            color: #ffffff;
             cursor: pointer;
             text-decoration: none;
-            margin-bottom: 3vh;
         }
 
         .start-button:hover {
@@ -60,120 +77,192 @@
 
         .game-container {
             display: none;
-            margin-top: 10%;
-            overflow: auto;
         }
- 
+
         .choices {
-        
-        display: flex;
-        flex-direction: column; /* Arrange buttons in a column */
-        align-items: center; /* Center the buttons horizontally */
-        gap: 10px; /* Space between the buttons */
-        margin-top: 2rem; /* Space above the choices container */
+
+            display: flex;
+            flex-direction: column;
+            /* Arrange buttons in a column */
+            align-items: center;
+            /* Center the buttons horizontally */
+            gap: 10px;
+            /* Space between the buttons */
+            margin-top: 2rem;
+            /* Space above the choices container */
         }
 
         .choice-button {
-            font-family: 'PixelFont', sans-serif;
-            font-size: 18px; /* Adjust font size to be smaller */
-            padding: 1vh 1vw; /* Adjust padding based on viewport height and width */
-            border: 0.5px solid #f2d79e; /* Solid border */
-            background-color: #f6e9bd; /* White background */
-            cursor: pointer; /* Pointer cursor on hover */
-            transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+            font-family: 'Montserrat';
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            /* Adjust font size to be smaller */
+            padding: 1vh 1vw;
+            /* Adjust padding based on viewport height and width */
+            border: 0.5px solid #f2d79e;
+            /* Solid border */
+            background-color: #eb0c8c;
+            /* White background */
+            cursor: pointer;
+            /* Pointer cursor on hover */
+            transition: background-color 0.3s, transform 0.3s;
+            /* Smooth transitions */
+            max-width: 100%;
+            min-width: 80%;
         }
 
         @media (hover: hover) {
             .choice-button:hover {
-                background-color: #f3dba7; /* Slightly darker background on hover */
+                background-color: #f3dba7;
+                /* Slightly darker background on hover */
             }
         }
+
         .choice-button:focus {
-            background-color: #fff; /* Slightly darker background on hover */
+            background-color: #fff;
+            /* Slightly darker background on hover */
         }
+
+        .story-text-container {
+            height: 100%;
+            overflow-y: auto;
+            padding-bottom: 20%;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            padding-top: 20%;
+        }
+
         .story-text {
             font-size: 20px;
-            margin-bottom: 1rem; /* Space above the choices container */
-        /* padding-bottom: 5rem; */
+            font-family: 'Montserrat';
+            margin-bottom: 1rem;
+            /* Space above the choices container */
+            padding-bottom: 5rem; 
             overflow-y: auto;
             max-height: 300px;
             height: auto;
+            color: #6a3e37;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
 
         .results {
             font-size: 20px;
-            margin-bottom: 1rem; /* Space above the choices container */
-        /* padding-bottom: 5rem; */
+            font-family: 'Montserrat';
+            margin-bottom: 1rem;
+            /* Space above the choices container */
+            /* padding-bottom: 5rem; */
             overflow-y: auto;
             height: auto;
         }
 
         .image-container {
-            max-width: 40%; /* Set max width of image container */
-            margin: -26% auto; /* Center the image horizontally */
+            max-width: 40%;
+            /* Set max width of image container */
+            margin: -26% auto;
+            /* Center the image horizontally */
             display: contents;
         }
 
         .image-container img {
-            width: 100%; /* Make the image fill its container */
-            height: auto; /* Maintain aspect ratio */
-            /*display: block; /* Remove any extra space */
-            max-width: 100%; /* Ensure image does not exceed its container */
+            width: 100%;
+            /* Make the image fill its container */
+            height: auto;
+            /* Maintain aspect ratio */
+            display: block;
+            /* Remove any extra space */
+            max-width: 100%;
+            /* Ensure image does not exceed its container */
         }
 
         .responsive-image {
             max-width: 100%;
             height: auto;
         }
+
         .scroll-box {
-            max-height: 190px;
-            height: auto;
-            overflow-y: auto; /* Adds a vertical scrollbar only when content overflows */
-            border: 1px solid #ccc;
+            max-height: 40%;
+            height: 100%;
+            overflow-y: auto;
+            /* Adds a vertical scrollbar only when content overflows */
             padding: 10px;
+            background-color: #eb0c8c;
+            padding-bottom: 80%;
+            
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .scroll-box-text {
+            font-family: 'Montserrat';            
+            font-size: 15px;
+            color: #ffffff;
+            max-height: 100%;
+            height: auto;
+            /* Adds a vertical scrollbar only when content overflows */
+            padding: 10px;
+        }
+
+        /* Chrome, Safari, and Opera */
+        .scroll-box::-webkit-scrollbar {
+        display: none;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <img id="homescreen" style="padding-bottom: 15px" src="images/TITLE.png" alt="Story Image"/>
-        
-        <div class="scroll-box">
-            <p><b>November 19th marks the anniversary of Tokyo Alley, and in 2026, we're celebrating 10 years!</b></p>
-            
-            <p>A whole decade of bringing people together, celebrating the things we love, and creating unforgettable memories. And
-            what better way to celebrate than with a birthday party?</p>
-            
-            <p>Help Touko plan the perfect birthday celebration for Sensei, and by the end you'll discover which Australian convention
-            mascot best matches your personality!</p>        
-            
-            <p><b>About Tokyo Alley</b></p>
-            <p>Tokyo Alley Perth is Western Australia's longest-running anime and pop-culture convention. As a volunteer-run,</br>
-            non-profit organisation, we're passionate about cultivating creativity within our community and beyond.</p>
-            
-            <p>Thank you for being a part of our journey!</p>
-        </div>
-        <a href="#" class="start-button" onclick="startGame()">Start</a>
+        <img id="homescreen" style="padding-bottom: 15px" src="images/TITLE.png" alt="Story Image" />
 
+        <div class="scroll-box">
+            <div class="scroll-box-text">
+                <p><b>November 19th marks the anniversary of Tokyo Alley, and in 2026, we're celebrating 10 years!</b></p>
+
+                <p>A whole decade of bringing people together, celebrating the things we love, and creating unforgettable
+                    memories. And
+                    what better way to celebrate than with a birthday party?</p>
+
+                <p>Help Touko plan the perfect birthday celebration for Sensei, and by the end you'll discover which
+                    Australian convention
+                    mascot best matches your personality!</p>
+
+                <p><b>About Tokyo Alley</b></p>
+                <p>Tokyo Alley Perth is Western Australia's longest-running anime and pop-culture convention. As a
+                    volunteer-run,</br>
+                    non-profit organisation, we're passionate about cultivating creativity within our community and beyond.
+                </p>
+                <p>Thank you for being a part of our journey!</p>
+                <br/>
+
+                <p><b>Credits</b></p>
+                <p>Programming by @greatdekutri</p>
+                <p>Character illustration by @valkyreia_arts</p>
+                <p>Scenario and graphics by @ochibrochi</p>
+                <br />
+
+            </div>
+        </div>
+    <a href="#" class="start-button" onclick="startGame()">Start</a>
         <div class="game-container" id="game-container">
             <div class="image-container">
-                <img id="story-image" src="images/Tokyo Alley Sensei BASECOLOUR.png" alt="Story Image" />
+                <img id="story-image" src="images/Touko.png" alt="Story Image" />
             </div>
-            <div class="story-text" id="story-text"></div>
-            <div class="results" id="results"></div>
+                <div class="story-text" id="story-text"></div>
             <div class="choices" id="choices"></div>
         </div>
-    </div> 
-    
 
+        <div class="results" id="results"></div>
     </div>
-    
-    <script src="js/mainGame.js">
-    
-    </script>
-    
-    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
 
-</body> 
+    <script src="js/mainGame.js">
+
+    </script>
+
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""
+            referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
+</body>
+
 </html>
