@@ -58,10 +58,10 @@ const gameData = {
         "text": "<p><span><strong>TOUKO:</strong></span></p><p><span>The party vibes should be…</span></p>",
         "image": "images/Touko_Hoshi.png",
         "choices": {
-            "Bright and cute": [4, ["touko", "annya", "maka"]],
-            "Cool and chic": [4, ["kaasan", "hoshi", "pog"]],
-            "Bold and loud": [4, ["wayville", "sprite", "bunyeon"]],
-            "Warm and cozy": [4, ["sensei", "tousan", "bristle"]],
+            "Bright and cute": [4, ["Touko", "Annya", "Maka"]],
+            "Cool and chic": [4, ["Kaasan", "Hoshi", "Pog"]],
+            "Bold and loud": [4, ["Wayville", "Sprite", "Bunyeon"]],
+            "Warm and cozy": [4, ["Sensei", "Tousan", "Bristle"]],
         }
     },
 
@@ -94,10 +94,10 @@ const gameData = {
         "text": "<p><span><strong>TOUKO:</strong></span></p><p><span>The dress code should be…</span></p>",
         "image": "images/Touko_Hoshi.png",
         "choices": {
-            "Fun and playful": [6, ["touko", "sprite", "pog"]],
-            "Comfy and casual": [6, ["tousan", "wayville", "bristle"]],
-            "Sharp and stylish": [6, ["hoshi", "annya", "bunyeon"]],
-            "Formal and fancy": [6, ["sensei", "kaasan", "maka"]],
+            "Fun and playful": [6, ["Touko", "Sprite", "Pog"]],
+            "Comfy and casual": [6, ["Tousan", "Wayville", "Bristle"]],
+            "Sharp and stylish": [6, ["Hoshi", "Annya", "Bunyeon"]],
+            "Formal and fancy": [6, ["Sensei", "Kaasan", "Maka"]],
         }
     },
 
@@ -139,10 +139,10 @@ const gameData = {
         "text": "<p><span><strong>TOUKO:</strong></span></p><p><span>The main decoration should be…</span></p>",
         "image": "images/Touko_Annya.png",
         "choices": {
-            "Balloons": [9, ["tousan", "hoshi", "bunyeon"]],
-            "Streamers": [9, ["touko", "pog", "maka"]],
-            "Pennants": [9, ["kaasan", "wayville", "sprite"]],
-            "Flowers": [9, ["sensei", "bristle", "annya"]],
+            "Balloons": [9, ["Tousan", "Hoshi", "Bunyeon"]],
+            "Streamers": [9, ["Touko", "Pog", "Maka"]],
+            "Pennants": [9, ["Kaasan", "Wayville", "Sprite"]],
+            "Flowers": [9, ["Sensei", "Bristle", "Annya"]],
         }
     },
 
@@ -169,10 +169,10 @@ const gameData = {
         "text": "<p><span><strong>TOUKO:</strong></span></p><p><span>I guess so… instead of a plain ol’ light bulb, we can use…</span></p>",
         "image": "images/Touko_Annya.png",
         "choices": {
-            "Lanterns": [11, ["sensei", "annya", "maka"]],
-            "Fairy lights": [11, ["touko", "bunyeon", "bristle"]],
-            "Neon lights": [11, ["kaasan", "wayville", "pog"]],
-            "Disco lights": [11, ["tousan", "hoshi", "sprite"]],
+            "Lanterns": [11, ["Sensei", "Annya", "Maka"]],
+            "Fairy lights": [11, ["Touko", "Bunyeon", "Bristle"]],
+            "Neon lights": [11, ["Kaasan", "Wayville", "Pog"]],
+            "Disco lights": [11, ["Tousan", "Hoshi", "Sprite"]],
         }
     },
 
@@ -214,10 +214,10 @@ const gameData = {
         "text": "<p><span><strong>TOUKO:</strong></span></p><p><span>The last party favour should be…</span></p>",
         "image": "images/Touko_Bristle.png",
         "choices": {
-            "Lollies": [14, ["tousan", "annya", "sprite"]],
-            "Thank-you cards": [14, ["sensei", "kaasan", "bristle"]],
-            "Keychains": [14, ["touko", "hoshi", "maka"]],
-            "Mini toys": [14, ["wayville", "pog", "bunyeon"]],
+            "Lollies": [14, ["Tousan", "Annya", "Sprite"]],
+            "Thank-you cards": [14, ["Sensei", "Kaasan", "Bristle"]],
+            "Keychains": [14, ["Touko", "Hoshi", "Maka"]],
+            "Mini toys": [14, ["Wayville", "Pog", "Bunyeon"]],
         }
     },
 
@@ -271,10 +271,10 @@ const gameData = {
         "text": "<p><span><strong>TOUKO:</strong></span></p><p><span>The catering should be…</span></p>",
         "image": "images/Touko_Maka.png",
         "choices": {
-            "Cookies & cupcakes": [17, ["tousan", "sprite", "annya"]],
-            "Burgers & pizza": [17, ["touko", "hoshi", "pog"]],
-            "Grazing platter with dips": [17, ["kaasan", "bristle", "maka"]],
-            "Popcorn & pretzels": [17, ["sensei", "wayville", "bunyeon"]],
+            "Cookies & cupcakes": [17, ["Tousan", "Sprite", "Annya"]],
+            "Burgers & pizza": [17, ["Touko", "Hoshi", "Pog"]],
+            "Grazing platter with dips": [17, ["Kaasan", "Bristle", "Maka"]],
+            "Popcorn & pretzels": [17, ["Sensei", "Wayville", "Bunyeon"]],
         }
     },
 
@@ -282,10 +282,10 @@ const gameData = {
         "text": "<p><span><strong>TOUKO:</strong></span></p><p><span>And the drinks…</span></p>",
         "image": "images/Touko_Maka.png",
         "choices": {
-            "Soft drinks": [18, ["touko", "sprite", "annya"]],
-            "Energy drinks": [18, ["wayville", "pog", "bunyeon"]],
-            "Punch": [18, ["hoshi", "kaasan", "tousan"]],
-            "Tea": [18, ["sensei", "bristle", "maka"]],
+            "Soft drinks": [18, ["Touko", "Sprite", "Annya"]],
+            "Energy drinks": [18, ["Wayville", "Pog", "Bunyeon"]],
+            "Punch": [18, ["Hoshi", "Kaasan", "Tousan"]],
+            "Tea": [18, ["Sensei", "Bristle", "Maka"]],
         }
     },
 
@@ -342,10 +342,10 @@ const gameData = {
         "text": "<p><span><strong>TOUKO:</strong></span></p><p><span>That is true! I think the flavour of the cake should be…</span></p>",
         "image": "images/Touko_Tousan.png",
         "choices": {
-            "Vanilla": [21, ["sensei", "bristle", "maka"]],
-            "Chocolate": [21, ["tousan", "wayville", "pog"]],
-            "Red Velvet": [21, ["hoshi", "kaasan", "bunyeon"]],
-            "Funfetti": [21, ["touko", "sprite", "annya"]],
+            "Vanilla": [21, ["Sensei", "Bristle", "Maka"]],
+            "Chocolate": [21, ["Tousan", "Wayville", "Pog"]],
+            "Red Velvet": [21, ["Hoshi", "Kaasan", "Bunyeon"]],
+            "Funfetti": [21, ["Touko", "Sprite", "Annya"]],
         }
     },
 
@@ -406,10 +406,10 @@ const gameData = {
         "text": "<p><span><strong>TOUKO:</strong></span></p><p><span>How about a game everyone can play…</span></p>",
         "image": "images/Touko_Wayville.png",
         "choices": {
-            "Video games": [24, ["bunyeon", "sprite", "pog"]],
-            "Board games": [24, ["tousan", "wayville", "annya"]],
-            "Drawing games": [24, ["touko", "sensei", "bristle"]],
-            "Card games": [24, ["hoshi", "kaasan", "maka"]],
+            "Video games": [24, ["Bunyeon", "Sprite", "Pog"]],
+            "Board games": [24, ["Tousan", "Wayville", "Annya"]],
+            "Drawing games": [24, ["Touko", "Sensei", "Bristle"]],
+            "Card games": [24, ["Hoshi", "Kaasan", "Maka"]],
         }
     },
 
@@ -451,8 +451,8 @@ const gameData = {
         "text": "<p><span><strong>TOUKO:</strong></span></p><p><span>The vibe should be…</span></p>",
         "image": "images/Touko_Bunyeon.png",
         "choices": {
-            "Energetic": [27, ["touko", "hoshi", "sprite", "pog", "annya", "bunyeon"]],
-            "Chill": [29, ["sensei", "kaasan", "tousan", "wayville", "bristle", "maka"]],
+            "Energetic": [27, ["Touko", "Hoshi", "Sprite", "Pog", "Annya", "Bunyeon"]],
+            "Chill": [29, ["Sensei", "Kaasan", "Tousan", "Wayville", "Bristle", "Maka"]],
         }
     },
 
@@ -460,10 +460,10 @@ const gameData = {
         "text": "<p><span><strong>BUNYEON:</strong></span></p><p><span>Sounds great! Let’s narrow it down to a genre.</span></p>",
         "image": "images/Touko_Bunyeon.png",
         "choices": {
-            "Pop hits": [28, ["touko", "bristle", "bunyeon"]],
-            "Electronic": [28, ["hoshi", "pog", "annya"]],
-            "Disco": [28, ["sensei", "tousan", "sprite"]],
-            "Rock": [28, ["wayville", "kaasan", "maka"]],
+            "Pop hits": [28, ["Touko", "Bristle", "Bunyeon"]],
+            "Electronic": [28, ["Hoshi", "Pog", "Annya"]],
+            "Disco": [28, ["Sensei", "Tousan", "Sprite"]],
+            "Rock": [28, ["Wayville", "Kaasan", "Maka"]],
         }
     },
 
@@ -487,10 +487,10 @@ const gameData = {
         "text": "<p><span><strong>BUNYEON:</strong></span></p><p><span>Sounds great! Let’s narrow it down to a genre.</span></p>",
         "image": "images/Touko_Bunyeon.png",
         "choices": {
-            "House": [30, ["hoshi", "pog", "annya"]],
-            "Lo-Fi": [30, ["sensei", "wayville", "maka"]],
-            "Jazz": [30, ["touko", "kaasan", "sprite"]],
-            "Acoustic": [30, ["tousan", "bristle", "bunyeon"]],
+            "House": [30, ["Hoshi", "Pog", "Annya"]],
+            "Lo-Fi": [30, ["Sensei", "Wayville", "Maka"]],
+            "Jazz": [30, ["Touko", "Kaasan", "Sprite"]],
+            "Acoustic": [30, ["Tousan", "Bristle", "Bunyeon"]],
         }
     },
 
@@ -547,10 +547,10 @@ const gameData = {
         "text": "<p><span><strong>TOUKO:</strong></span></p><p><span>The activity tonight should be…</span></p>",
         "image": "images/Touko_Pog.png",
         "choices": {
-            "Arts & Crafts": [33, ["touko", "sensei", "bristle"]],
-            "Photobooth": [33, ["hoshi", "pog", "maka"]],
-            "Karaoke": [33, ["tousan", "annya", "bunyeon"]],
-            "Movie": [33, ["kaasan", "wayville", "sprite"]],
+            "Arts & Crafts": [33, ["Touko", "Sensei", "Bristle"]],
+            "Photobooth": [33, ["Hoshi", "Pog", "Maka"]],
+            "Karaoke": [33, ["Tousan", "Annya", "Bunyeon"]],
+            "Movie": [33, ["Kaasan", "Wayville", "Sprite"]],
         }
     },
 
@@ -637,10 +637,10 @@ const gameData = {
         "text": "<p><span><strong>TOUKO:</strong></span></p><p><span>Hey buddy, what do you think about getting this for Sensei’s birthday?</span></p>",
         "image": "images/Touko_Sprite.png",
         "choices": {
-            "New Paint": [36, ["wayville", "bristle", "bunyeon"]],
-            "Art from Touko": [36, ["touko", "sensei", "kaasan"]],
-            "Dog-sized Smock": [36, ["hoshi", "annya", "maka"]],
-            "Doggy Biscuits": [36, ["tousan", "sprite", "pog"]],
+            "New Paint": [36, ["Wayville", "Bristle", "Bunyeon"]],
+            "Art from Touko": [36, ["Touko", "Sensei", "Kaasan"]],
+            "Dog-sized Smock": [36, ["Hoshi", "Annya", "Maka"]],
+            "Doggy Biscuits": [36, ["Tousan", "Sprite", "Pog"]],
         }
     },
 
@@ -680,10 +680,10 @@ const gameData = {
         "text": "<p><span><strong>TOUKO:</strong></span></p><p><span> I’ll draw this pattern on the wrapping paper…</span></p>",
         "image": "images/Touko.png",
         "choices": {
-            "Paw Prints": [39, ["sensei", "sprite", "pog"]],
-            "Geometric Shapes": [39, ["touko", "wayville", "bunyeon"]],
-            "Watercolour Splash": [39, ["tousan", "annya", "bristle"]],
-            "Traditional Pattern": [39, ["hoshi", "kaasan", "maka"]],
+            "Paw Prints": [39, ["Sensei", "Sprite", "Pog"]],
+            "Geometric Shapes": [39, ["Touko", "Wayville", "Bunyeon"]],
+            "Watercolour Splash": [39, ["Tousan", "Annya", "Bristle"]],
+            "Traditional Pattern": [39, ["Hoshi", "Kaasan", "Maka"]],
         }
     },
 
@@ -761,18 +761,18 @@ const gameData = {
 
 };
 const personalities = {
-    "touko": 0,
-    "sensei": 0,
-    "tousan": 0,
-    "kaasan": 0,
-    "hoshi": 0,
-    "wayville": 0,
-    "sprite": 0,
-    "pog": 0,
-    "bristle": 0,
-    "annya": 0,
-    "maka": 0,
-    "bunyeon": 0,
+    "Touko": 0,
+    "Sensei": 0,
+    "Tousan": 0,
+    "Kaasan": 0,
+    "Hoshi": 0,
+    "Wayville": 0,
+    "Sprite": 0,
+    "Pog": 0,
+    "Bristle": 0,
+    "Annya": 0,
+    "Maka": 0,
+    "Bunyeon": 0,
 };
 
 let currentState = 1;
